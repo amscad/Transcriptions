@@ -1117,10 +1117,18 @@ void insertNewlineAfterRange(NSMutableString *string, NSRange insertionRange)
 
 - (NSDictionary *)timeStampAttributes
 {
-	return @{
-			 NSForegroundColorAttributeName: [NSColor grayColor],
-			 //NSFontAttributeName: [NSFont systemFontOfSize:12], // We just disable this and use the current default size.
-			 };
+	static NSDictionary *timeStampAttributesDict = nil;
+	static dispatch_once_t onceToken;
+	
+	dispatch_once(&onceToken, ^{
+		timeStampAttributesDict =
+		@{
+		  NSForegroundColorAttributeName: [NSColor grayColor],
+		  //NSFontAttributeName: [NSFont systemFontOfSize:12], // We just disable this and use the current default size.
+		};
+	});
+	
+	return timeStampAttributesDict;
 }
 
 - (NSRange)insertTimeStampStringForCMTime:(CMTime)time
