@@ -286,7 +286,7 @@ NSString * const	TSCErrorDomain		= @"com.davidhas.Transcriptions.error";
 	else if ([workspace type:type conformsToType:SRTDocumentType]) {
 		BOOL result =
 		[self readFromSRTData:wrapper.regularFileContents
-							   error:outError];
+						error:outError];
 		
 		if (result) {
 			NSURL *fileURL = self.fileURL;
