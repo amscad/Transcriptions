@@ -1176,7 +1176,7 @@ void insertNewlineAfterRange(NSMutableString *string, NSRange insertionRange)
 	
 	insertionRange.length = insertionCursor.location - insertionRange.location;
 	
-	[text addAttributes:self.timeStampAttributes range:timeStampRange];
+	[text setAttributes:self.timeStampAttributes range:timeStampRange];
 	
 	if (timeStampRangePtr != NULL) {
 		*timeStampRangePtr = timeStampRange;
