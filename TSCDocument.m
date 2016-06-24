@@ -332,11 +332,13 @@ void insertNewlineAfterRange(NSMutableString *string, NSRange insertionRange)
 
 - (BOOL)readFromSRTData:(NSData *)data error:(NSError **)outError
 {
+	const int32_t timescale = 100;
+	
 	// TODO: Add UI for mergeConsecutiveIdenticalTimeStamps (merge consecutive time stamps within a given distance).
 	// TODO: Add UI for timeStampsOnSeparateLines (forcing time stamps onto their own row instead of having them inline).
 	BOOL mergeConsecutiveTimeStamps = NO;
 	BOOL mergeIdenticalTimeStampsOnly = YES;
-	CMTime mergeDistance = CMTimeMake(5, 100);
+	CMTime mergeDistance = CMTimeMake(5, timescale);
 	CMTime mergeRangeDuration = CMTimeMultiply(mergeDistance, 2);
 	
 	BOOL timeStampsOnSeparateLines = NO;
