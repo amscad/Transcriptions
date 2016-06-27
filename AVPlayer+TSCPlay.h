@@ -13,5 +13,4 @@
 - (void)playWithRate:(float)rate;
 - (void)playWithCurrentUserDefaultRate;
 
-
 @end
