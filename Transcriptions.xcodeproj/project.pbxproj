@@ -495,7 +495,7 @@
 						TestTargetID = 8D15AC270486D014006FF6A4;
 					};
 					8D15AC270486D014006FF6A4 = {
-						DevelopmentTeam = M9AG4A3F6L;
+						DevelopmentTeam = X73TN6G93G;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -509,6 +509,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
+				English,
 				en,
 				ca,
 				cs,
@@ -810,6 +811,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
+				DEVELOPMENT_TEAM = X73TN6G93G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -843,6 +845,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
+				DEVELOPMENT_TEAM = X73TN6G93G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
