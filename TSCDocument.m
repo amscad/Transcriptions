@@ -1152,10 +1152,12 @@ void insertNewlineAfterRange(NSMutableString *string, NSRange insertionRange)
 	NSString * const space = @" ";
 	const NSUInteger spaceLength = 1;
 
-	NSString * const prefix = @"#";
+//	NSString * const prefix = @"#";
+	NSString * const prefix = @"[";
 	const NSUInteger prefixLength = 1;
 	
-	NSString * const suffix = @"#";
+//	NSString * const suffix = @"#";
+	NSString * const suffix = @"]";
 	const NSUInteger suffixLength = 1;
 	
 	if (prependSpace) {
