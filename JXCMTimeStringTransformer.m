@@ -55,7 +55,8 @@ NSString * timecodeStringForCMTime(CMTime time, const CMTimeScale targetTimescal
 #if USE_MILLISECONDS
 	@"%02d:%02d:%02d.%03d";
 #else
-	@"%02d:%02d:%02d.%02d";
+//	@"%02d:%02d:%02d.%02d";
+	@"%02d:%02d:%02d";					//get rid of milliseconds
 #endif
 	return [NSString stringWithFormat:timecodeFormatString,
 			(int)hours,
